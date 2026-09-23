@@ -2832,18 +2832,18 @@ body {
     border-left: 0;
   }
   .product-story {
-    height: calc(210vh - 132px);
+    height: calc(230svh - 132px);
   }
   .product-scene {
     top: 64px;
     width: 92vw;
-    height: min(72svh, 620px);
-    min-height: 420px;
+    height: calc(100svh - 82px);
+    min-height: 560px;
   }
   .product-background,
   .product-background-primary,
   .product-background-secondary {
-    background-size: contain, auto, auto !important;
+    background-size: cover, auto, auto !important;
     background-repeat: no-repeat, no-repeat, no-repeat !important;
     transform: none !important;
   }
