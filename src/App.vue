@@ -80,7 +80,8 @@ const products: Product[] = [
     id: "backpack",
     name: "Backpack SpaceScanX",
     platform: "Wearable mobile mapping",
-    statement: "Continuous capture for long and complex indoor–outdoor routes.",
+    statement:
+      "Seamless data capture across long and complex indoor–outdoor routes.",
     metrics: ["300 m", "±1 cm", "1.28 M pts/s", "~6 kg"],
     specs: [
       ["Maximum range", "300 m"],
@@ -102,7 +103,7 @@ const products: Product[] = [
     name: "Handheld SpaceScanX",
     platform: "Lightweight mobile mapping",
     statement:
-      "Fast one-person spatial capture for narrow or constrained interiors.",
+      "Fast, single-operator data capture in narrow and confined spaces.",
     metrics: ["70 m", "±2 cm", "200 K pts/s", "~1.2 kg"],
     specs: [
       ["Measurement range", "70 m"],
@@ -121,7 +122,7 @@ const products: Product[] = [
     name: "Vehicle-mounted SpaceScanX",
     platform: "Road and corridor mapping",
     statement:
-      "Large-scale capture for moving vehicles and rail-based deployments.",
+      "Large-scale spatial data capture from vehicle- and rail-mounted platforms.",
     metrics: ["475 m", "±3–5 mm", "3.6 M pts/s", "~25 kg"],
     specs: [
       ["Measurement range", "475 m"],
@@ -140,7 +141,7 @@ const products: Product[] = [
     name: "UAV SpaceScanX",
     platform: "Aerial reality capture",
     statement:
-      "A lightweight aerial system for rapid terrain and infrastructure mapping.",
+      "A lightweight UAV system for rapid terrain and infrastructure mapping.",
     metrics: ["450 m", "±2 cm", "240 K pts/s", "~1.0 kg"],
     specs: [
       ["Maximum range", "450 m"],
@@ -184,7 +185,7 @@ const products: Product[] = [
     name: "Robot Dog SpaceScanX",
     platform: "Autonomous inspection",
     statement:
-      "A quadruped system that combines LiDAR, RGB and thermal data for inspection.",
+      "A quadruped robotic system integrating LiDAR, RGB, and thermal data for intelligent inspection.",
     metrics: ["300 m", "±1 cm", "IP67", "-20°C–550°C"],
     specs: [
       ["Maximum detection range", "300 m"],
@@ -205,7 +206,7 @@ const products: Product[] = [
     name: "Uncrewed Surface Vessel SpaceScanX",
     platform: "Hydrographic mapping",
     statement:
-      "Integrated LiDAR and bathymetry for above-water and underwater spatial models.",
+      "Integrated LiDAR and bathymetric sensing for seamless above- and below-water 3D modeling.",
     metrics: ["300 m", "±1 cm", "0.15–200 m depth", "4–6 hours"],
     specs: [
       ["Maximum detection range", "300 m"],
@@ -223,7 +224,7 @@ const products: Product[] = [
     name: "Robotic Arm SpaceScanX",
     platform: "Precision measure-and-act",
     statement:
-      "Six-axis measurement and control for detailed, repeatable industrial work.",
+      "A six-axis robotic arm for precise, repeatable industrial measurement and control.",
     metrics: ["1 mm", "±0.05 mm", "6 axes", "5 kg"],
     specs: [
       ["Mobile LiDAR", "300 m / ±1 cm / 640,000 pts/s / 360°"],
@@ -322,7 +323,7 @@ const cases: ApplicationCase[] = [
     name: "Building Defect Detection",
     sector: "Urban Renewal",
     hasContent: true,
-    copy: "The Building Defect Detection System analyses visible-light and thermal-infrared imagery, identifies facade defects, visualises results on a 3D model and automatically generates reports.",
+    copy: "Proprietary specialist models and multimodal AI models analyse visible-light and thermal-infrared imagery to detect façade defects, visualise findings in 3D, and automatically generate inspection reports.",
     deliverables:
       "Defect locations · thermal and visible-light imagery · 3D model visualisation · report generation",
     deliverableNote:
@@ -341,7 +342,7 @@ const cases: ApplicationCase[] = [
     name: "Signboard Defect Detection",
     sector: "Urban Renewal",
     hasContent: true,
-    copy: "The Signboard Defect Detection System uses vehicle mobile mapping for signboard segmentation and defect detection, then localises the detected results within the system.",
+    copy: "Segment signboards, detect defects, and precisely localise findings within the inspection system for field inspection and follow-up.",
     deliverables:
       "Geolocated signboard records · defect attributes · image evidence · map-based queries",
     deliverableNote:
@@ -360,7 +361,7 @@ const cases: ApplicationCase[] = [
     name: "Traffic Sign Defect Detection",
     sector: "Urban Renewal",
     hasContent: true,
-    copy: "The Traffic Sign Defect Detection System uses a vehicle-mounted mobile mapping system to recognise multiple types of traffic signs and detect their defects.",
+    copy: "Recognise multiple traffic sign types and detect defects from vehicle-mounted mapping imagery.",
     deliverables:
       "Recognised traffic signs · condition records · image evidence · location-based review",
     deliverableNote:
@@ -379,7 +380,7 @@ const cases: ApplicationCase[] = [
     name: "Urban Renewal",
     sector: "Urban Renewal",
     hasContent: true,
-    copy: "A unified inspection workflow for building facades, signboards, traffic signs and existing interiors—turning captured imagery into mapped, review-ready maintenance evidence.",
+    copy: "A unified inspection workflow for building façades, signboards, traffic signs, and existing interiors—transforming captured imagery into georeferenced, review-ready data for inspection and maintenance.",
     deliverables:
       "Façade condition review · street-asset detection · mapped issue records · reporting",
     deliverableNote:
@@ -1281,27 +1282,22 @@ async function sendInquiry() {
             </div>
             <article>
               <p>
-                SmartSpace Technologies Co., Ltd. is a high-tech enterprise
-                supported by The Hong Kong Polytechnic University. Based on
-                leading geospatial technologies, we deliver advanced products,
-                solutions and services for smart cities.
+                Smart Space Technologies Limited is a high-tech company
+                supported by The Hong Kong Polytechnic University (PolyU),
+                specializing in geospatial artificial intelligence (GeoAI)
+                technologies for smart city applications. We develop innovative
+                products, solutions, and services powered by 3D mobile mapping,
+                smart city platforms, and urban spatiotemporal big data
+                analytics. Our innovations have gained international
+                recognition, including gold medals at the International
+                Exhibition of Inventions Geneva in 2021 and 2023. We empower
+                organizations to harness GeoAI for more effective urban
+                management, planning, and decision-making.
               </p>
               <p>
-                Our core business includes 3D mobile laser mapping systems,
-                smart-city platforms and urban spatiotemporal big-data analytics
-                solutions.
-              </p>
-              <p>
-                Our key technologies have received the Gold Medal at the 2021
-                International Exhibition of Inventions of Geneva, the 2023
-                International Smart City Technology Innovation Gold Award, the
-                Gold Medal at the Asia International Innovation &amp; Invention
-                Expo, and other recognitions.
-              </p>
-              <p>
-                Through continuous innovation in technology and products, we
-                make professional, efficient and convenient spatial services
-                more accessible to every user.
+                Through continuous technological and product innovation, we
+                strive to make professional, efficient, and accessible spatial
+                services available to everyone.
               </p>
             </article>
           </div>
@@ -1402,11 +1398,11 @@ async function sendInquiry() {
         <header class="matrix-functions__heading">
           <h2>From capture data<br />to <em>usable outputs.</em></h2>
           <p>
-            Process, analyse, extract and model 3D point clouds and panoramic
-            images from SpaceScanX and other laser scanning systems. Generate
-            georeferenced and colorized point clouds, survey trajectories,
-            street-view models, 3D models and inspection outputs for
-            professional geospatial workflows.
+            Process, analyze, extract, and model 3D point clouds and panoramic
+            imagery from SpaceScanX and other laser scanning systems. Generate
+            georeferenced, colorized point clouds, survey trajectories,
+            street-view imagery, 3D models, and inspection outputs for
+            professional geospatial applications.
           </p>
         </header>
         <figure class="matrix-function-atlas">
@@ -1689,10 +1685,10 @@ async function sendInquiry() {
             <p class="eyebrow">Building Defect Detection</p>
             <h2>Find facade defects<br /><em>with context.</em></h2>
             <p>
-              Self-developed specialist models and multimodal large models
-              analyse visible-light and thermal-infrared imagery, detect facade
-              defects, visualise results on a 3D model and automatically
-              generate reports.
+              Proprietary specialist models and multimodal AI models analyse
+              visible-light and thermal-infrared imagery to detect façade
+              defects, visualise findings in 3D, and automatically generate
+              inspection reports.
             </p>
           </div>
           <figure>
@@ -1712,8 +1708,9 @@ async function sendInquiry() {
               />
               <figcaption>SIGNBOARD DEFECT DETECTION</figcaption>
               <p>
-                Segment signboards, identify defects and localise each result in
-                the inspection system for practical field use.
+                Segment signboards, detect defects, and precisely localise
+                findings within the inspection system for field inspection and
+                follow-up.
               </p>
             </figure>
             <div class="urban-renewal-street-assets__short">
@@ -1721,9 +1718,9 @@ async function sendInquiry() {
                 <p class="eyebrow">Signboard Defect Detection</p>
                 <h2>Detect, locate and<br /><em>review street assets.</em></h2>
                 <p>
-                  Vehicle-mounted mobile mapping supports asset-level inspection
-                  across the street network, from signboards to regulatory
-                  traffic signs.
+                  Vehicle-mounted mobile mapping enables asset-level inspection
+                  across road networks, covering assets from signboards to
+                  regulatory traffic signs.
                 </p>
               </header>
               <figure>
@@ -1733,8 +1730,8 @@ async function sendInquiry() {
                 />
                 <figcaption>TRAFFIC SIGN DEFECT DETECTION</figcaption>
                 <p>
-                  Recognise multiple traffic-sign types and detect condition
-                  issues from vehicle-mounted mapping imagery.
+                  Recognise multiple traffic sign types and detect defects from
+                  vehicle-mounted mapping imagery.
                 </p>
               </figure>
             </div>
@@ -1745,9 +1742,9 @@ async function sendInquiry() {
             <p class="eyebrow">2D Floor Plan Generation</p>
             <h2>From point cloud<br /><em>to floorplan.</em></h2>
             <p>
-              Scan-to-Floorplan converts indoor point clouds into 2D floorplans,
-              providing spatial layouts and building geometry for survey
-              documentation and renovation planning.
+              Scan-to-Floorplan automatically converts indoor point clouds into
+              accurate 2D floorplans for survey documentation and renovation
+              planning.
             </p>
           </header>
           <div class="urban-renewal-floorplan__examples">
@@ -1797,9 +1794,9 @@ async function sendInquiry() {
             <p class="eyebrow">SITE CONTEXT</p>
             <h2>Stay Located in<br /><em>the Site.</em></h2>
             <p>
-              Link BIM components with point clouds, panoramic imagery and the
-              current site position. Teams can review where an observation
-              belongs before comparing it with planned work.
+              Link BIM components with point clouds, panoramic imagery, and site
+              locations, enabling teams to spatially locate observations and
+              compare as-built conditions with planned designs.
             </p>
           </div>
           <figure>
