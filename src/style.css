@@ -1193,8 +1193,8 @@ footer > a:last-child {
   .mobile-nav__top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12vh;
+    justify-content: flex-end;
+    margin-bottom: 14vh;
     color: #294a7d;
     font-size: 12px;
     font-weight: 700;
@@ -1203,16 +1203,13 @@ footer > a:last-child {
   .mobile-nav__top button {
     display: flex;
     align-items: center;
-    gap: 8px;
     padding: 0;
     border: 0;
     background: transparent;
     color: #294a7d;
-    font-size: 15px;
-    font-weight: 700;
   }
   .mobile-nav__top button i {
-    font-size: 32px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 300;
     line-height: 0.6;
@@ -1223,14 +1220,14 @@ footer > a:last-child {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 27px 0;
     border-bottom: 1px solid #edf1f3;
     border-top: 0;
     border-right: 0;
     border-left: 0;
     background: transparent;
     color: #294a7d;
-    font-size: clamp(28px, 8vw, 40px);
+    font-size: clamp(30px, 8.5vw, 42px);
     font-weight: 700;
   }
   .mobile-nav a:last-child {

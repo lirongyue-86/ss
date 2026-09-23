@@ -1057,13 +1057,12 @@ async function sendInquiry() {
       aria-label="Mobile navigation"
     >
       <div class="mobile-nav__top">
-        <span>MENU</span>
         <button
           type="button"
           aria-label="Close navigation menu"
           @click="mobileMenuOpen = false"
         >
-          Close <i>×</i>
+          <i>×</i>
         </button>
       </div>
       <RouterLink to="/">Home</RouterLink>
