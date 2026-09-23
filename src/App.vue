@@ -1056,6 +1056,16 @@ async function sendInquiry() {
       class="mobile-nav"
       aria-label="Mobile navigation"
     >
+      <div class="mobile-nav__top">
+        <span>MENU</span>
+        <button
+          type="button"
+          aria-label="Close navigation menu"
+          @click="mobileMenuOpen = false"
+        >
+          Close <i>×</i>
+        </button>
+      </div>
       <RouterLink to="/">Home</RouterLink>
       <section
         class="mobile-nav-group"
