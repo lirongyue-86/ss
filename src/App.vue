@@ -610,6 +610,8 @@ const formStatus = ref("");
 const productsOpen = ref(false);
 const applicationsOpen = ref(false);
 const mobileMenuOpen = ref(false);
+const mobileProductsOpen = ref(false);
+const mobileApplicationsOpen = ref(false);
 const page = computed(() => {
   if (route.name === "home") return "products";
   return route.name || "products";
@@ -692,6 +694,7 @@ async function setupMatrixReveal() {
 function showSpec(product: Product) {
   productsOpen.value = false;
   applicationsOpen.value = false;
+  mobileMenuOpen.value = false;
   selected.value = product;
   router.push(`/products/${product.id}`);
 }
@@ -787,6 +790,7 @@ function applicationReferenceImage(application: (typeof cases)[number]) {
 }
 function showApplication(application: (typeof cases)[number]) {
   applicationsOpen.value = false;
+  mobileMenuOpen.value = false;
   activeCase.value = cases.findIndex((item) => item.id === application.id);
   router.push(`/applications/${application.id}`);
 }
@@ -1053,9 +1057,52 @@ async function sendInquiry() {
       aria-label="Mobile navigation"
     >
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/products">Products</RouterLink>
+      <section
+        class="mobile-nav-group"
+        :class="{ 'is-open': mobileProductsOpen }"
+      >
+        <button
+          type="button"
+          :aria-expanded="mobileProductsOpen"
+          @click="mobileProductsOpen = !mobileProductsOpen"
+        >
+          Products <i>+</i>
+        </button>
+        <div class="mobile-nav-submenu">
+          <RouterLink to="/products">All products</RouterLink>
+          <button
+            v-for="product in products"
+            :key="product.id"
+            type="button"
+            @click="showSpec(product)"
+          >
+            {{ product.name }} <i>→</i>
+          </button>
+        </div>
+      </section>
       <RouterLink to="/software">SpaceMatrix</RouterLink>
-      <RouterLink to="/applications">Applications</RouterLink>
+      <section
+        class="mobile-nav-group"
+        :class="{ 'is-open': mobileApplicationsOpen }"
+      >
+        <button
+          type="button"
+          :aria-expanded="mobileApplicationsOpen"
+          @click="mobileApplicationsOpen = !mobileApplicationsOpen"
+        >
+          Applications <i>+</i>
+        </button>
+        <div class="mobile-nav-submenu">
+          <button
+            v-for="sector in applicationSectors"
+            :key="sector.id"
+            type="button"
+            @click="showSector(sector)"
+          >
+            {{ sector.title }} <i>→</i>
+          </button>
+        </div>
+      </section>
       <RouterLink to="/contact">Contact Us</RouterLink>
     </nav>
   </header>
