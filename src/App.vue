@@ -1012,7 +1012,7 @@ async function sendInquiry() {
             productsOpen = false;
           "
         >
-          Applications <i>⌄</i>
+          Application <i>⌄</i>
         </button>
         <div class="applications-mega">
           <div class="applications-mega__intro">
@@ -1069,7 +1069,6 @@ async function sendInquiry() {
           Products <i>+</i>
         </button>
         <div class="mobile-nav-submenu">
-          <RouterLink to="/products">All products</RouterLink>
           <button
             v-for="product in products"
             :key="product.id"
@@ -1090,7 +1089,7 @@ async function sendInquiry() {
           :aria-expanded="mobileApplicationsOpen"
           @click="mobileApplicationsOpen = !mobileApplicationsOpen"
         >
-          Applications <i>+</i>
+          Application <i>+</i>
         </button>
         <div class="mobile-nav-submenu">
           <button
@@ -1103,7 +1102,6 @@ async function sendInquiry() {
           </button>
         </div>
       </section>
-      <RouterLink to="/contact">Contact Us</RouterLink>
     </nav>
   </header>
   <main @mousemove="pointer">
