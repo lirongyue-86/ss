@@ -5890,16 +5890,29 @@ body {
 /* Phone-first finishing pass: retain full images and stack every visual workflow. */
 @media (max-width: 620px) {
   .system-film-slot {
-    aspect-ratio: 4 / 3;
+    /* A genuine portrait opening frame on phones, rather than a shrunken
+       landscape banner. The original image keeps its aspect ratio; the
+       viewport crops only the outer edges instead of distorting it. */
+    aspect-ratio: auto;
+    min-height: calc(100svh - 66px);
   }
   .system-film-background {
     object-fit: cover;
+    object-position: center;
   }
   .system-film-overlay {
     padding: 18px;
   }
   .system-film-overlay img {
     width: min(90vw, 560px);
+  }
+  .product-story {
+    height: calc(220svh - 132px);
+  }
+  .product-scene {
+    width: 100%;
+    height: calc(100svh - 66px);
+    min-height: 0;
   }
   .application-detail-hero,
   .application-detail-content,
